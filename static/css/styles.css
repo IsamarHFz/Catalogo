@@ -1,0 +1,79 @@
+/*Estilos Globales*/
+*::after,
+*::before
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Lato';
+    color: #333;
+}
+
+/*Main*/
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*Estilos header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+
+}
+
+.count-products{
+    position: absolute;
+}
+
+.item{
+    border-radius: 20px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.70);
+}
+
+.info-product{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    text-align: center; 
+}
+
+.container-icon{
+    width: 150px;
+    height: 150px;
+    stroke: #000;
+}
+
+/* Estilo del icono */
+.calification-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor; /* Esto toma el color del elemento padre, que en este caso será el color del texto */
+    float: right; /* Alinea el icono a la izquierda del texto */
+    margin-right: 5px; /* Crea un pequeño espacio entre el icono y el texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el icono para indicar que es clickeable */
+  }
+
+  /* Estilo del icono al hacer clic */
+  .calification-icon svg:active {
+    fill: rgb(240, 78, 205); /* Cambia el color del icono al hacer clic (en este caso, dorado) */
+  }
+
+  /* Cambiar la fuente de la letra */
+  .info-product h2 {
+    font-family: "Arial", sans-serif; /* Cambia la fuente del título a Arial o cualquier otra fuente */
+  }
