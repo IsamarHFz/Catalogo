@@ -8,17 +8,21 @@
 }
 
 body{
+    background-image: linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);
     margin: 0 auto;
-    max-width: 1200px;
-    font-family: 'Lato';
-    color: #333;
+    max-width: 1000px;
+    font-family: 'Bahnschrift';
+    text-align: center;
+    color: #333333;
 }
 
 /*Main*/
 .container-items{
-    display: grid;
+    width: 100%;
+    /*display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 20px;*/
+    align-items: center;
 }
 
 img{
@@ -27,18 +31,21 @@ img{
 
 /*Estilos header*/
 header{
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;
+    justify-content: space-between;*/
     padding: 30px 0 40px 0;
-
 }
 
 .count-products{
     position: absolute;
 }
 
-.item{
+.item {
+    background-color: rgba(250, 242, 248, 0.219); 
+    margin-top: 10px;
+    width: 300px;
     border-radius: 20px;
+    border: 1px solid rgb(54, 53, 53);
 }
 
 .item:hover{
@@ -52,11 +59,12 @@ header{
     text-align: center; 
 }
 
-.container-icon{
+/*.container-icon{
     width: 150px;
     height: 150px;
     stroke: #000;
-}
+    align-items: center;
+}*/
 
 /* Estilo del icono */
 .calification-icon svg {
@@ -68,12 +76,26 @@ header{
     cursor: pointer; /* Cambia el cursor al pasar sobre el icono para indicar que es clickeable */
   }
 
-  /* Estilo del icono al hacer clic */
-  .calification-icon svg:active {
-    fill: rgb(240, 78, 205); /* Cambia el color del icono al hacer clic (en este caso, dorado) */
-  }
-
   /* Cambiar la fuente de la letra */
   .info-product h2 {
     font-family: "Arial", sans-serif; /* Cambia la fuente del título a Arial o cualquier otra fuente */
   }
+
+  .item-group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .red {
+    color: rgb(241, 46, 46);
+  }
+
+  .cora {
+    color: black; /* Color inicial del ícono */
+}
+
+.cora.active {
+    color: red; /* Color cuando está activo (clicado) */
+}

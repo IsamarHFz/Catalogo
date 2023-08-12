@@ -4,35 +4,249 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo</title>
-    <link rel="stylesheet" href="./static/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Papelería Sandy</h1> 
-        <div class="container-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="icon-user">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg> 
-        </div>
-        <div class="container-items">
-            {% for item in items %}
+        <h1>PAPEPLERÍA SANDY</h1>  
+    </header>
+
+    <div class="container-items">
+        <div class="item-group">
             <div class="item">
                 <figure>
-                    <img src="{{ item.image }}" alt="Product">
+                    <img src="static/img/Libreta.png" alt="Product">
                 </figure>
                 <div class="info-product">
-                    <h2>{{ item.name }}</h2>
-                    <p class="price">Precio {{ item.price }}</p>
-                    <p class="description">{{ item.description }}</p>
+                    <h2>Libreta Scribe</h2>
+                    <p class="price">Precio $23</p>
+                    <p class="description">Libreta Scribe cuadro grande, 100 hojas</p>
                     <p class="calification-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                        </svg>
+                        <i class="fa fa-heart cora"></i>
                     </p>
                 </div>
             </div>
-            {% endfor %}
-        </div>
-    </header>
+                <div class="item">
+                    <figure>
+                        <img src="static/img/Plastilina.png" alt="Product">
+                    </figure>
+                    <div class="info-product">
+                        <h2>Plastilina</h2>
+                        <p class="price">Precio: $11</p>
+                        <p class="description">Barra de plastilina color rojo</p>
+                        <p class="calification-icon">
+                           <i class="fa fa-heart cora red"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="static/img/Pritt.png" alt="Product">
+                    </figure>
+                    <div class="info-product">
+                        <h2>Resistol </h2>
+                        <p class="price">Precio: $16</p>
+                        <p class="description">Resistol en barra chico</p>
+                        <p class="calification-icon">
+                           <i class="fa fa-heart cora"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-group">
+                <div class="item">
+                    <figure>
+                        <img src="static/img/ColoresVividel.png" alt="Product">
+                    </figure>
+                    <div class="info-product">
+                        <h2>Lápices de colores</h2>
+                        <p class="price">Precio: $60</p>
+                        <p class="description">Colores 24 piezas + 3 incluye color oro, plata y cobre</p>
+                        <p class="calification-icon">
+                           <i class="fa fa-heart cora red"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="static/img/lapicerosBic.png" alt="Product">
+                    </figure>
+                    <div class="info-product">
+                        <h2>Lapicero Bic</h2>
+                        <p class="price">Precio: $6</p>
+                        <p class="description">Lápicero Bic de color rojo, azul y negro, se venden por separado</p>
+                        <p class="calification-icon">
+                           <i class="fa fa-heart cora"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="static/img/lapizDuo.png" alt="Product">
+                    </figure>
+                    <div class="info-product">
+                        <h2>Lapiz Duo</h2>
+                        <p class="price">Precio: $6</p>
+                        <p class="description">Lápiz Duo Dixon</p>
+                        <p class="calification-icon">
+                           <i class="fa fa-heart cora"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-group">
+                <div class="item">
+                    <figure>
+                        <img src="static/img/LibretaNorma.png" alt="Product">
+                    </figure>
+                    <div class="info-product">
+                        <h2>Libreta Norma</h2>
+                        <p class="price">Precio: $86</p>
+                        <p class="description">Libreta Norma rayada, 100 hojas</p>
+                        <p class="calification-icon">
+                           <i class="fa fa-heart cora"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="static/img/LibretaEco.png" alt="Product">
+                    </figure>
+                    <div class="info-product">
+                        <h2>Libreta Ecológica</h2>
+                        <p class="price">Precio: $60</p>
+                        <p class="description">Libreta Ecológica blanca, 100 hojas</p>
+                        <p class="calification-icon">
+                           <i class="fa fa-heart cora"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="static/img/resistolChico-removebg-preview.png" alt="Product">
+                    </figure>
+                    <div class="info-product">
+                        <h2>Resistol Dixon</h2>
+                        <p class="price">Precio: $10</p>
+                        <p class="description">Resistol en barra chico, 8g</p>
+                        <p class="calification-icon">
+                           <i class="fa fa-heart cora"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-group">
+                <div class="item">
+                    <figure>
+                        <img src="static/img/resistolGrande-removebg-preview.png" alt="Product">
+                    </figure>
+                    <div class="info-product">
+                        <h2>Resistol Dixon</h2>
+                        <p class="price">Precio: $25</p>
+                        <p class="description">Resistol en barra grande</p>
+                        <p class="calification-icon">
+                           <i class="fa fa-heart cora"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="static/img/resistolBully.png" alt="Product">
+                    </figure>
+                    <div class="info-product">
+                        <h2>Resistol Bully</h2>
+                        <p class="price">Precio: $11</p>
+                        <p class="description">Resistol líquido 110g</p>
+                        <p class="calification-icon">
+                           <i class="fa fa-heart cora"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="static/img/ColoresMapita.png" alt="Product">
+                    </figure>
+                    <div class="info-product">
+                        <h2>Lápices de colores</h2>
+                        <p class="price">Precio: $27</p>
+                        <p class="description">Lápices de colores Mapita 12 piezas</p>
+                        <p class="calification-icon">
+                           <i class="fa fa-heart cora"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-group">
+                <div class="item">
+                    <figure>
+                        <img src="static/img/plumonesPelikan.png" alt="Product">
+                    </figure>
+                    <div class="info-product">
+                        <h2>Plumón Pelikan</h2>
+                        <p class="price">Precio: $34</p>
+                        <p class="description">Paquete de plumones de 12 piezas</p>
+                        <p class="calification-icon">
+                        <i class="fa fa-heart cora"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="static/img/pinturaVinci.png" alt="Product">
+                    </figure>
+                    <div class="info-product">
+                        <h2>Pintura Vinci</h2>
+                        <p class="price">Precio: $12</p>
+                        <p class="description">Pintura Vinci color negro</p>
+                        <p class="calification-icon">
+                        <i class="fa fa-heart cora"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="static/img/papelCrepre.jpg" alt="Product">
+                    </figure>
+                    <div class="info-product">
+                        <h2>Papel crepé</h2>
+                        <p class="price">Precio: $10</p>
+                        <p class="description">Un pliego de papel crepé,color verde, rosa, amarillo, azul cielo, rojo, morado, entre otros</p>
+                        <p class="calification-icon">
+                        <i class="fa fa-heart cora"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+        <script>
+            const coraIcons = document.querySelectorAll('.cora');
+
+            coraIcons.forEach(icon => {
+                icon.addEventListener('click', function () {
+                    icon.classList.toggle('active');
+                    const productId = icon.getAttribute('data-product-id');
+                    addToFavorites(productId);
+                });
+            });
+
+            function addToFavorites(productId) {
+                fetch('/add_to_favorites', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ productId: productId })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            }
+        </script>
+    
 </body>
 </html>
