@@ -15,6 +15,41 @@ body{
     text-align: center;
     color: #333333;
 }
+.spacer {
+    height: 70px; /* Mismo valor de altura que el banner */
+}
+
+.login-link {
+    color: #333; /* Color del enlace */
+    text-decoration: none; /* Quita la decoración de subrayado */
+    font-weight: bold; /* Texto en negrita */
+    position: fixed;
+    top: 10px; /* Alinea en la parte superior */
+    right: 20px; /* Alinea en la parte derecha */
+    transition: color 0.3s ease;
+}
+
+.login-link:hover {
+    color: #555; /* Cambio de color al pasar el cursor */
+}
+
+.banner {
+    position: fixed; /* Fija el banner en la pantalla */
+    top: 0; /* Lo coloca en la parte superior */
+    left: 0; /* Lo coloca a la izquierda */
+    right: 0; /* Lo coloca a la derecha */
+    z-index: 1000; /* Asegura que el banner esté en la parte superior de otros elementos */
+    display: center;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 0.3fr 1.4fr 0.3fr;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fdfdfdcb;
+    border-radius: 10px;
+    height: 60px;
+    transition: all 0.3s ease; /* Agrega una transición suave */
+}
 
 /*Main*/
 .container-items{
